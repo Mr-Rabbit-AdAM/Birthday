@@ -35,9 +35,9 @@ c_d=$(date +"%d")
 c_m=$(date +"%m")
 c_y=$(date +"%y")
 bd_y=$(( 20$c_y - $y ))
-echo $bd_y
+echo -e "\e[1;32m You are old $bd_y"
 if [[ $c_d == $d  && $m == $c_m ]];then
-echo ""
+echo -e "\e[2;32m On your birthday you are a happy person because I wish you, God, King, your family and I wish you a happy birthday."
 else
-echo "no bla"
+echo "Today is not your birthday"
 fi
